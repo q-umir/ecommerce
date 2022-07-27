@@ -1,0 +1,23 @@
+<section style="background-color: #F5F5F5; height: 90vh;" class="pt-4 pb-4">
+  <div class="container">
+    <p class="text-end">
+      <% if user_signed_in? %>
+        <%= link_to 'Nuevo Producto', new_product_path, class: 'btn btn-secondary' %>
+      <% end %>
+    </p>
+    <% if @products.count == 0 %>
+      <div class="container-no-products">
+        <p>No hay producto que coincida con la busqueda</p>
+      </div>
+    <% else %>
+      <div class="auto-grid">
+        <% @products.each_with_index do |product, index| %>
+          <div class="product-grid">
+              <%= render 'list_products_not_deleted.html', product: product %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+  </div>
+</section>

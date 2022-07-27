@@ -28,7 +28,8 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'simple_form', '~> 5.1'
 gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.2.0'
-gem 'font-awesome-sass', '~> 5.15', '>= 5.15.1'
+# gem 'font-awesome-sass', '~> 5.15', '>= 5.15.1'
+gem 'font-awesome-sass', '~> 6.1', '>= 6.1.1'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
 

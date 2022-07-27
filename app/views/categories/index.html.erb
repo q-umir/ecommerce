@@ -14,17 +14,15 @@
           <p class="card-text text-center"><%= category.name %></p>
             <p  class="card-text text-center icons-edit-delete">
                 <%= link_to edit_category_path(category) do %>
-                  <i class="far fa-edit"></i>
+                  <!--<i class="far fa-edit"></i>-->
+                  editar
                 <% end %>
                 <%= link_to category, method: :delete, data: { confirm: 'Are you sure?' } do %>
-                  <i class="far fa-trash-alt"></i>
+                  <!-- <i class="far fa-trash-alt"></i>-->
+                  eliminar
                 <% end %>
             </p>
-            <%# <p class="card-text text-center icons-edit-delete"> %>
-                <%# <%= link_to category_restore_path(category), method: :post do %> %>
-                  <%# <i class="fas fa-trash-restore"></i> %>
-                <%# <% end %> %>
-            <%# </p> %>
+
         </div>
       </div>
     <% end %>
