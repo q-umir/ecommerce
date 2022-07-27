@@ -1,0 +1,59 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.new-category {
+  a {
+    padding: 6px 29px;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 1.3125;
+    background-color: #BDD239;
+    border: 1px solid #BDD239;
+    color: #F7F7F7;
+
+    &:hover {
+      background-color: #FFF;
+      color: #BDD239;
+    }
+  }
+}
+
+.container-auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+
+  .item-category {
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      .icons-edit-delete {
+        display: flex;
+        justify-content: center;
+
+        a {
+          width: 30px;
+          height: 30px;
+          border: 1px solid #ddd;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #666;
+          border-radius: 50%;
+          transition: all 0.3s;
+          font-size: 0.9rem;
+
+          &:hover {
+            background: #ddd;
+            text-decoration: none;
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+}
