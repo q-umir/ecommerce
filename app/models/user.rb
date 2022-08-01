@@ -24,4 +24,5 @@ class User < ApplicationRecord
   has_many :product_likes
   # has_many :products_you_like, through: :product_likes, source: :product
 
+  has_secure_password
 end

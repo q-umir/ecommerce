@@ -5,6 +5,10 @@ ruby '3.0.3'
 
 # add
 gem 'pundit', '~> 2.2'
+# add
+gem "bcrypt", "~> 3.1"
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'

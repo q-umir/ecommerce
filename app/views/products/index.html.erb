@@ -1,13 +1,16 @@
 <section style="background-color: #F5F5F5; height: 90vh;" class="pt-4 pb-4">
   <div class="container">
-    <p class="text-end">
-    <% @categories.each_with_index do |category, index| %>
-       <%= link_to category.name, products_path(:query => category.id), method: :get %>
-    <% end %>
-      <% if user_signed_in? %>
-        <%= link_to 'Nuevo Producto', new_product_path, class: 'btn btn-outline-secondary' %>
-      <% end %>
-    </p>
+    <div class="text-end ">
+      <div class="dropdown">
+          <% @categories.each_with_index do |category, index| %>
+            <%= link_to category.name, products_path(:query => category.id), class:'btn btn-light', method: :get %>
+          <% end %>
+
+          <% if user_signed_in? %>
+            <%= link_to 'Nuevo Producto', new_product_path, class: 'btn btn-outline-secondary' %>
+          <% end %>
+      </div>
+    </div>
     <% if @products.count == 0 %>
       <div class="container-no-products">
         <p>No hay producto que coincida con la busqueda</p>

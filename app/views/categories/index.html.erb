@@ -7,31 +7,29 @@
   <div class="container-auto-grid mt-3">
     <% @categories.each do |category| %>
       <div class="card item-category mx-2 mb-4">
-        <% if category.id <= 3 %>
+        <% if category.id <= 4 %>
           <%= image_tag("category#{category.id}.jpg", class: 'card-img-top') %>
         <% else %>
           <%= image_tag("category1.jpg", class: 'card-img-top') %>
         <% end %>
         <div class="card-body">
-          <p class="card-text text-center ">
+          <p class="card-text text-center">
             <%= link_to category.name, products_path(:query => category.id), method: :get %>
             <%#= category.name %>
           </p>
           <p  class="card-text text-center icons-edit-delete">
             <% if user_signed_in? && policy(Category).edit? %>
               <%= link_to edit_category_path(category) do %>
-                <!--<i class="far fa-edit"></i>-->
-                editar
+                <i class="far fa-edit"></i>
               <% end %>
             <% end %>
 
             <% if user_signed_in? && policy(Category).destroy? %>
               <%= link_to category, method: :delete, data: { confirm: 'Are you sure?' } do %>
-                <!-- <i class="far fa-trash-alt"></i>-->
-                eliminar
+                <i class="far fa-trash-alt"></i>
               <% end %>
             <% end %>
-          </p>
+         </p>
         </div>
       </div>
     <% end %>

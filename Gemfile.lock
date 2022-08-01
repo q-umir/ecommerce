@@ -235,6 +235,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   autoprefixer-rails (~> 10.4, >= 10.4.2.0)
+  bcrypt (~> 3.1)
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
