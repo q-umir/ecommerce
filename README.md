@@ -1,24 +1,37 @@
-# README
+## Super Market 🛒
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Super market] es un aplicativo en donde se realiza la venta de suministro de alimentos que se
+encuentran por categorías. 
 
-Things you may want to cover:
 
-* Ruby version
+### Requerimientos
 
-* System dependencies
+`ruby 3.0.3
+ Rails 6.1.6.1
+ Postgres 1.1
+`
 
-* Configuration
 
-* Database creation
+### Herramientas utilizados
 
-* Database initialization
+`gem 'pundit', '~> 2.2'
+ gem "bcrypt", "~> 3.1"
+ gem 'wicked_pdf'
+ gem 'wkhtmltopdf-binary'
+ gem 'annotate'
+`
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### Instalación
 
-* Deployment instructions
+Clonar el repositorio
+`git@github.com:q-umir/ecommerce.git`
 
-* ...
+Cargar seeds a la base de datos
+`rails db:seed`
+
+
+
+
+
+
