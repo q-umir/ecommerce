@@ -1,6 +1,6 @@
 ## Super Market 🛒
 
-[Super market] es un aplicativo en donde se realiza la venta de suministro de alimentos que se
+**Super market** es un aplicativo en donde se realiza la venta de suministro de alimentos que se
 encuentran por categorías. 
 
 
