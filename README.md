@@ -4,7 +4,7 @@
 encuentran por categorías. 
 
 
-### Requerimientos
+#### Requerimientos
 
 `ruby 3.0.3
  Rails 6.1.6.1
@@ -12,7 +12,7 @@ encuentran por categorías.
 `
 
 
-### Herramientas utilizados
+#### Herramientas utilizados
 
 `gem 'pundit', '~> 2.2'
  gem "bcrypt", "~> 3.1"
@@ -22,7 +22,7 @@ encuentran por categorías.
 `
 
 
-### Instalación
+#### Instalación
 
 Clonar el repositorio
 `git@github.com:q-umir/ecommerce.git`
