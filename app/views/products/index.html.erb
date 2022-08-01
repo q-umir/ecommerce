@@ -1,14 +1,23 @@
 <section style="background-color: #F5F5F5; height: 90vh;" class="pt-4 pb-4">
   <div class="container">
-    <div class="text-end ">
+    <div class="text-end mb-3">
       <div class="dropdown">
-          <% @categories.each_with_index do |category, index| %>
-            <%= link_to category.name, products_path(:query => category.id), class:'btn btn-light', method: :get %>
-          <% end %>
 
-          <% if user_signed_in? %>
-            <%= link_to 'Nuevo Producto', new_product_path, class: 'btn btn-outline-secondary' %>
-          <% end %>
+        <% if user_signed_in? %>
+          <%= link_to 'Nuevo Producto', new_product_path, class: 'btn btn-light' %>
+        <% end %>
+
+        <div class="btn-group ms-2">
+          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </button>
+          <ul class="dropdown-menu">
+            <% @categories.each_with_index do |category, index| %>
+              <li><%= link_to category.name, products_path(:query => category.id), class: 'dropdown-item', method: :get %></li>
+            <% end %>
+          </ul>
+        </div>
+
       </div>
     </div>
     <% if @products.count == 0 %>
@@ -24,6 +33,5 @@
         <% end %>
       </div>
     <% end %>
-
   </div>
 </section>
