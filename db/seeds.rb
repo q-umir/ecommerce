@@ -9,6 +9,7 @@
 user1 = User.find_or_initialize_by(email: 'lily@gmail.com')
 user1.password= 'password'
 user1.password_confirmation= 'password'
+user1.admin = true
 user1.save
 
 user2 = User.find_or_initialize_by(email: 'andrea@gmail.com')

@@ -3,7 +3,13 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
 
   def index
-      @products = Product.all
+      if params[:query].present?
+        # busqueda con pg_search
+        @products = Product.where(category_id: params[:query])
+      else
+        @products = Product.all
+      end
+    @categories = Category.all
   end
 
   def show

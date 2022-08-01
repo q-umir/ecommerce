@@ -1,0 +1,23 @@
+
+.bespoke-navbar{
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.10);
+}
+
+.bespoke-navbar .container-fluid {
+  padding: 0 2.5rem;
+}
+
+.bespoke-navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+// .navbar-collapse {
+
+// }
+
+.logo-name {
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}

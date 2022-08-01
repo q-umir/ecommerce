@@ -1,22 +1,22 @@
 // Place all the styles related to the categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.new-category {
-  a {
-    padding: 6px 29px;
-    margin-left: 10px;
-    font-size: 16px;
-    line-height: 1.3125;
-    background-color: #BDD239;
-    border: 1px solid #BDD239;
-    color: #F7F7F7;
+// .new-category {
+//   a {
+//     padding: 6px 18px;
+//     margin-left: 10px;
+//     font-size: 16px;
+//     line-height: 1.3125;
+//     background-color: #c5d81d;
+//     border: 1px solid #c5d81d;
+//     color: #F7F7F7;
 
-    &:hover {
-      background-color: #FFF;
-      color: #BDD239;
-    }
-  }
-}
+//     &:hover {
+//       background-color: #FFF;
+//       color: #c5d81d;
+//     }
+//   }
+// }
 
 .container-auto-grid {
   --auto-grid-min-size: 16rem;
